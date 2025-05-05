@@ -1,1 +1,2 @@
 # 360-Project-3
+Our group’s project will be a UWB Lost and Found Portal application. On this application, users will be able to upload a picture, description, tags or additional notes about any lost item on campus. Additionally, they will be able to browse previously uploaded items in order to claim them. The browsing feature will be enhanced by a search function, as well as different filters you can sort the items by. 

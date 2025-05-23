@@ -4,7 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 from .models import CustomUser
-
+#This is me enterinng a comment for pull request
 
 class CustomUserAdmin(UserAdmin):
     add_form = CustomUserCreationForm

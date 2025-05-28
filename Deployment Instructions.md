@@ -16,7 +16,11 @@ Note: Python should be downloaded to your computer as well.
 1. python -m venv env
 2. env\Scripts\activate
 3. cd 360-Project-3-main
-4. cd lost-and-found-sea 2 //Note: The root folder should be the one you selected to open at the beginning, if this is not the case, simply navigate to the  lost-and-found-sea 2 directory with cd commands.
+4. cd lost-and-found-sea 2
+
+  Note: The root folder should be the one you selected to open at the beginning, if this is not the case, simply navigate to the  lost-and-found-sea 2 directory with cd commands.
+
+
 5. python -m pip install -r requirements.txt
 6. cd laf
 7. python manage.py migrate

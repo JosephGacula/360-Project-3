@@ -8,3 +8,4 @@
     "watch:css": "tailwindcss build -i laf/static/css/main.css -o laf/static/css/style.css -w"
   }
 }
+#trying to edit

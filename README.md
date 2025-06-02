@@ -8,7 +8,7 @@ The following are instructions to launch the UWB Lost and Found Portal Web Appli
 
 **Windows:**
 
-1.Navigate to UWB-Lost-and-Found-Portal
+1.Navigate to UWB-Lost-and-Found-Portal (wherever your download is located)
 
 2.Double click on "RunOnWindows.bat".
 
@@ -16,13 +16,14 @@ The following are instructions to launch the UWB Lost and Found Portal Web Appli
 
 **Mac (With iTerm2):**
 
-1.Navigate to UWB-Lost-and-Found-Portal
+1.Navigate to UWB-Lost-and-Found-Portal (wherever your download is located)
 
 2.Double click on "RunOnMac.sh".
 
 3.The web application should take under 5 seconds to launch up, and under 30 if your system does not have Python installed.
 
 **Mac (Without iTerm2)**
+
 1.Open Terminal
 
 2.Navigate to the UWB-Lost-and-Found-Portal folder, if you do not know how to do this, simply copy paste these commands into the terminal:

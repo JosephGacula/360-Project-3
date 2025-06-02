@@ -12,7 +12,7 @@ The following are instructions to launch the UWB Lost and Found Portal Web Appli
 
 2.Double click on "RunOnWindows.bat".
 
-3.The web application should take under 5 seconds to launch up, and under 30 if your system does not have Python installed.
+3.The command line will open, depending on if you have dependencies like Python previously installed or not, it will launch automatically typically under 25 seconds.
 
 **Mac (With iTerm2):**
 
@@ -20,7 +20,7 @@ The following are instructions to launch the UWB Lost and Found Portal Web Appli
 
 2.Double click on "RunOnMac.sh".
 
-3.The web application should take under 5 seconds to launch up, and under 30 if your system does not have Python installed.
+3.Allow iTerm2 to open the file, depending on if you have dependencies like Python previously installed or not, it will launch automatically typically under 25 seconds.
 
 **Mac (Without iTerm2)**
 
@@ -40,7 +40,7 @@ chmod +x RunOnMac.sh
 
 ./RunOnMac.sh
 
-3.The web application should take under 5 seconds to launch up, and under 30 if your system does not have Python installed.
+3.Depending on if you have dependencies like Python previously installed or not, it will launch automatically typically under 25 seconds.
 
 
 At this point, hold control key and click on the server url. After clicking on the server url, you will be taken to the prototype site. Here, you can upload, claim, and give descriptions for items.

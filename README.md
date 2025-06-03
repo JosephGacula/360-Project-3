@@ -1,10 +1,11 @@
 # UWB Lost and Found Portal
-Our group’s project will be a UWB Lost and Found Portal application. On this application, users will be able to upload a picture, description, or additional notes about any lost item on campus.  
+Our group’s project is a UWB Lost and Found Portal web application. On this application, users will be able to upload a picture, description, or additional notes about any lost item on campus.  
 
 For Mac users, we recommend downloading the iTerm2 application to simplify the process for launching the web application. It can be found here: https://iterm2.com/
 
+## Deployment Instructions
 
-The following are instructions to launch the UWB Lost and Found Portal Web Application:
+The following are instructions to launch the UWB Lost and Found Portal Web Application on different operating systems:
 
 **Windows:**
 
@@ -42,5 +43,11 @@ chmod +x RunOnMac.sh
 
 3.Depending on if you have dependencies like Python previously installed or not, it will launch automatically typically under 25 seconds.
 
+You will be taken to the prototype site. Here, you can upload, claim, and give descriptions for items.
 
-At this point, hold control key and click on the server url. After clicking on the server url, you will be taken to the prototype site. Here, you can upload, claim, and give descriptions for items.
+## Features
+Once on the web application, users are able to:
+
+1. Create an account
+2. Upload lost items with a description and image
+3. Claim items

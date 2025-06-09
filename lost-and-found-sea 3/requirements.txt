@@ -1,0 +1,7 @@
+Django
+gunicorn
+Pillow
+psycopg[binary]
+environs[django]
+django-debug-toolbar
+Faker

@@ -1,4 +1,4 @@
-Known Issues (TODO)
+Known Issues
 After the BugBash on 6/3, a couple of issues have been brought to our attention. Each issue will be listed below with a description.
 
 Issue #1: Deployment is Inconsistent

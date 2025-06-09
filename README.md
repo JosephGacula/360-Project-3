@@ -15,7 +15,7 @@ The following are instructions to launch the UWB Lost and Found Portal Web Appli
 
 4. If the server does not load, please attempt reloading the server, or redownloading the release and running RunOnWindows again.
 
-**Mac (Without iTerm2)**
+**Mac**
 
 1. Open Terminal
 

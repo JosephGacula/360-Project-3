@@ -1,40 +1,34 @@
 #!/bin/bash
 
-# Navigate to the script's directory
-cd "$(dirname "$0")"
-
-# Check if Python is installed
-if ! command -v python3 &>/dev/null; then
-    echo "Python3 is not installed."
-
-    read -p "Install Python using Homebrew? (y/n): " choice
-    if [[ "$choice" == "y" ]]; then
-        if ! command -v brew &>/dev/null; then
-            echo "Homebrew is not installed. Please install it from https://brew.sh"
-            exit 1
-        fi
-        brew install python
-    else
-        echo "Aborting setup."
-        exit 1
-    fi
+# Activate virtual environment if it exists, otherwise create it
+if [ ! -d "env" ]; then
+    python3 -m venv env
 fi
 
-# Create virtual environment
-python3 -m venv env
 source env/bin/activate
 
-# Upgrade pip and install dependencies
-python3 -m pip install --upgrade pip
-python3 -m pip install -r requirements.txt
+# Upgrade pip
+pip install --upgrade pip
 
-# Apply Django migrations
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Django migrations
 python3 laf/manage.py makemigrations
 python3 laf/manage.py migrate
 
-# Populate fake data
+# Create superuser automatically (if needed, you can skip this)
+# echo "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.create_superuser('admin', 'admin@example.com', 'adminpass')" | python3 laf/manage.py shell
+
+# Populate database with fake data
 python3 populate.py
 
-# Open browser
+# Open in default web browser
 if command -v open &>/dev/null; then
-    open http:/
+    open http://127.0.0.1:8000/
+elif command -v xdg-open &>/dev/null; then
+    xdg-open http://127.0.0.1:8000/
+fi
+
+# Run Django development server
+python3 laf/manage.py runserver

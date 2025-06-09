@@ -25,17 +25,23 @@ fi
 python3 -m venv env
 source env/bin/activate
 
-# Navigate to project
-
-cd "lost-and-found-sea 2"
+# Navigate to project folder
+cd "UWB-Lost-and-Found-Portal-Dom-s-Fixed-Branch"
+cd "lost-and-found-sea 3"
 
 # Install dependencies
+python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
+# Enter the Django app directory
 cd laf
 
 # Apply migrations
+python3 manage.py makemigrations
 python3 manage.py migrate
+
+# Populate fake data
+python3 ../populate.py
 
 # Open browser
 if command -v open &>/dev/null; then

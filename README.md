@@ -25,7 +25,9 @@ cd Downloads
 
 cd UWB-Lost-and-Found-Portal 
 
-Note: Depending on if you downloaded the release multiple times, you may need to enter in "cd " and then the exact folder name. Ex: UWB-Lost-and-Found-Portal(1)
+Note: Depending on if you downloaded the release multiple times, you may need to enter in "cd " and then the exact folder name. Ex: cd UWB-Lost-and-Found-Portal(1)
+
+cd lost-and-found-sea 3
 
 chmod +x RunOnMac.sh
 

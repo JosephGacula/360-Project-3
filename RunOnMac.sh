@@ -25,22 +25,19 @@ fi
 python3 -m venv env
 source env/bin/activate
 
-# Navigate to project
-cd "UWB-Lost-and-Found-Portal-Dom-s-Fixed-Branch/lost-and-found-sea 3"
+# Navigate into the 'laf' Django project directory
+cd laf
 
-# Upgrade pip and install dependencies
+# Install dependencies from requirements.txt (which is in laf/)
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
 # Apply migrations
-cd laf
 python3 manage.py makemigrations
 python3 manage.py migrate
 
-# Populate with fake data
-cd ..
-python3 populate.py
-cd laf
+# Populate fake data
+python3 ../populate.py
 
 # Open browser
 if command -v open &>/dev/null; then

@@ -23,9 +23,9 @@ The following are instructions to launch the UWB Lost and Found Portal Web Appli
 
 cd Downloads
 
-cd UWB-Lost-and-Found-Portal
+cd UWB-Lost-and-Found-Portal 
 
-Note: Depending on the version, you should be able to type "cd UWB-Lost" and then press tab to fill out the rest of the command.
+Note: Depending on if you downloaded the release multiple times, you may need to enter in "cd " and then the exact folder name. Ex: UWB-Lost-and-Found-Portal(1)
 
 chmod +x RunOnMac.sh
 

@@ -7,11 +7,10 @@ cd "$(dirname "$0")"
 if ! command -v python3 &>/dev/null; then
     echo "Python3 is not installed."
 
-    # Ask user before installing (Homebrew required)
     read -p "Install Python using Homebrew? (y/n): " choice
     if [[ "$choice" == "y" ]]; then
         if ! command -v brew &>/dev/null; then
-            echo "Homebrew is not installed. Please install Homebrew first: https://brew.sh"
+            echo "Homebrew is not installed. Please install it from https://brew.sh"
             exit 1
         fi
         brew install python
@@ -25,11 +24,11 @@ fi
 python3 -m venv env
 source env/bin/activate
 
-# Install dependencies (requirements.txt is in the same directory)
+# Upgrade pip and install dependencies
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
-# Apply migrations from laf/
+# Apply Django migrations
 python3 laf/manage.py makemigrations
 python3 laf/manage.py migrate
 
@@ -38,10 +37,4 @@ python3 populate.py
 
 # Open browser
 if command -v open &>/dev/null; then
-    open http://127.0.0.1:8000/
-elif command -v xdg-open &>/dev/null; then
-    xdg-open http://127.0.0.1:8000/
-fi
-
-# Run the Django development server
-python3 laf/manage.py runserver
+    open http:/

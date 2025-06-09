@@ -25,16 +25,12 @@ fi
 python3 -m venv env
 source env/bin/activate
 
-# Navigate to project folder
-cd "UWB-Lost-and-Found-Portal-Dom-s-Fixed-Branch"
-cd "lost-and-found-sea 3"
+# Navigate into the 'laf' Django project directory
+cd laf
 
-# Install dependencies
+# Install dependencies from requirements.txt (which is in laf/)
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
-
-# Enter the Django app directory
-cd laf
 
 # Apply migrations
 python3 manage.py makemigrations
@@ -52,3 +48,4 @@ fi
 
 # Run the Django development server
 python3 manage.py runserver
+

@@ -1,1 +1,25 @@
-Test Summary (TODO)
+Test Summary
+1. Automated Testing
+Tools: Django Test Framework, pytest  
+Details:  
+- Focused on backend logic like authorization and form validation  
+- Tests were run after big changes and a couple times per week  
+- 24 passed, 2 skipped (Selenium UI tests not configured)  
+Last Run: June 8, 2025
+
+2. Manual Testing
+Browser Tested: Google Chrome only  
+Platforms: Windows and Mac (inconsistent behavior on both in terms of deployment, still do not know the source of the problem)  
+Details:  
+- Manually tested login, posting, claiming, and display 
+- Some layout issues were noticed 
+Last Run: June 8, 2025
+
+3. User Testing
+Session: In-class testing with around 30 students (The BugBash on 6/3)
+Details:  
+- Students used Chrome on their laptops (Windows and Mac)  
+- Students had a general idea of what the application was for
+- A lot of confusion over deployment instructions, many could not launch the progrma
+- Students were able to find edge case and UI bugs if they did deploy the application
+Last Run: June 3, 2025

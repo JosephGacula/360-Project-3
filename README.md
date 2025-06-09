@@ -44,4 +44,6 @@ Once on the web application, users are able to:
 
 1. Create an account
 2. Upload lost items with a description and image
-3. Admin Account
+3. Switch between lost or found items in user interface
+4. Edit posts on associated with the user
+5. Delete posts only associated with the user

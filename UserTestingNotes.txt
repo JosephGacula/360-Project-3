@@ -1,0 +1,27 @@
+User Testing Notes
+Most User Testing Took Place During the in-person BugBash on 6/3. Here are our notes:
+
+- Some people are able to deploy the web application without a problem. This is mostly seen on Windows, but there are a few students on Mac laptops who are able to as well. 
+
+- Issues with deployment on Windows mainly concerned a server not found error appearing in browser after using the
+one-click executable. We have not encountered this error before on our end, needs to be looked into more.
+
+- Issues with deployment on Mac were varied. Some could struggled with following the terminal instructions to launch the application without iTerm2, being confused about the copy paste commands in the readme. This would be
+a usability issue and needs to be simplified and consistent. Other than that, Mac users encountered the same server not found issue as Windows users, with some launching the server and others not. The cause is still
+not identified.
+
+- Even with moderation, most Mac users could not deploy the application.
+
+- Some users were confused about the lack of posts when initially launching the software, not sure what to do after launching it. 
+
+- Generally users knew what the software was for
+
+- Many users skipped reading the readme
+
+- Most who were able to launch the application successfully navigated the account creation process and were able to create a post with an image and description.
+
+-Users were able to identify a bug where creating a post without an item crashed the program. 
+
+-Users also tested edge cases and were able to find multiple UI bugs, specifically with long inputs.
+
+

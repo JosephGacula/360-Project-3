@@ -1,3 +1,4 @@
+User Testing Notes
 Most User Testing Took Place During the in-person BugBash on 6/3. Here are our notes:
 
 - Some people are able to deploy the web application without a problem. This is mostly seen on Windows, but there are a few students on Mac laptops who are able to as well. 
@@ -11,7 +12,9 @@ not identified.
 
 - Even with moderation, most Mac users could not deploy the application.
 
-- Soem users were confused about the lack of posts when initially launching the software, not sure what to do after launching it. 
+- Some users were confused about the lack of posts when initially launching the software, not sure what to do after launching it. 
+
+- Generally users knew what the software was for
 
 - Many users skipped reading the readme
 

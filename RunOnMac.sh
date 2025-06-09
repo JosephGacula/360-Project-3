@@ -25,19 +25,16 @@ fi
 python3 -m venv env
 source env/bin/activate
 
-# Navigate into the 'laf' Django project directory
-cd laf
-
-# Install dependencies from requirements.txt (which is in laf/)
+# Install dependencies (requirements.txt is in the same directory)
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
-# Apply migrations
-python3 manage.py makemigrations
-python3 manage.py migrate
+# Apply migrations from laf/
+python3 laf/manage.py makemigrations
+python3 laf/manage.py migrate
 
 # Populate fake data
-python3 ../populate.py
+python3 populate.py
 
 # Open browser
 if command -v open &>/dev/null; then
@@ -47,4 +44,4 @@ elif command -v xdg-open &>/dev/null; then
 fi
 
 # Run the Django development server
-python3 manage.py runserver
+python3 laf/manage.py runserver
